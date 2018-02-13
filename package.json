@@ -1,0 +1,24 @@
+{
+  "name": "hyperboiler",
+  "homepage": "https://github.com/daz4126/hyperboiler",
+  "license": "MIT",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/daz4126/hyperboiler.git"
+  },
+  "description": "Boilerplate code for Hyperapp projects.",
+  "dependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "hyperapp": "^1.1.2"
+  },
+  "scripts": {
+    "start": "parcel src/index.html --out-dir docs",
+    "build": "parcel build src/index.html --out-dir docs --public-url ./"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.5.1"
+  }
+}

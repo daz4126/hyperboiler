@@ -1,0 +1,63 @@
+@import 'settings';
+
+html {
+  line-height: 1;
+}
+
+body {
+  align-items: center;
+  background-color: $secondary-color;
+  display: flex;
+
+  font-family: $base-fonts;
+
+  height: 100vh;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+h1 {
+  color: $primary-color;
+
+  font-weight: 100;
+  font-size: 8em;
+
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+button {
+  background: $secondary-color;
+  border-radius: 0px;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+
+  font-size: 2em;
+  font-weight: 100;
+
+  margin: 0;
+
+  outline: none;
+  padding: 5px 15px;
+
+  transition: background .2s;
+
+  &:hover, &:active, &:disabled {
+    background: $primary-color;
+    color: $secondary-color;
+  }
+  &:active {
+    outline: 2px solid $primary-color;
+  }
+  &:focus {
+    border: 1px solid $primary-color;
+  }
+}
+
+button + button {
+  margin-left: 3px;
+}
