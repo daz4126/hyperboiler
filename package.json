@@ -2,7 +2,7 @@
   "name": "hyperboiler",
   "homepage": "https://github.com/daz4126/hyperboiler",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/daz4126/hyperboiler.git"
