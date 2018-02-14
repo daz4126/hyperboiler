@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "parcel src/index.html --out-dir docs",
-    "build": "parcel build src/index.html --out-dir docs --public-url ./"
+    "build": "parcel build src/index.html --out-dir docs --public-url ./",
+    "deploy": "git push origin master"
   },
   "devDependencies": {
     "node-sass": "^4.7.2",
