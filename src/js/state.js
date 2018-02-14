@@ -1,5 +1,5 @@
 const state = {
-  todos: [],
+  items: [],
   input: '',
   placeholder: 'Make a list...'
 };

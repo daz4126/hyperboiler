@@ -8,7 +8,7 @@
 
 body {
   padding-top: 50px;
-  background: $secondary-color;
+  background: $bg-color;
   color: $primary-color;
   display: flex;
   height: 100vh;
@@ -17,8 +17,8 @@ body {
 }
 
 h1 {
-  color: $primary-color;
-
+  color: $secondary-color;
+  & strong{ color: $primary-color; }
   font-family: $heading-font;
   font-weight: 100;
   font-size: 4.2em;
@@ -39,15 +39,15 @@ input {
   outline: 0;
 
   &::-webkit-input-placeholder {
-    color: $secondary-color;
+    color: $bg-color;
   }
 
   &::-moz-placeholder {
-    color: $secondary-color;
+    color: $bg-color;
   }
 
   &::-ms-input-placeholder {
-    color: $secondary-color;
+    color: $bg-color;
   }
 
   &:hover, &:focus, &:active {
@@ -56,7 +56,7 @@ input {
 }
 
 button {
-  background: $secondary-color;
+  background: $bg-color;
   border-radius: 0px;
   border: 1px solid $primary-color;
   color: $primary-color;
@@ -95,6 +95,10 @@ ul {
 
 li {
   font-size: 1.8em;
+  &.completed{
+    color: $secondary-color;
+    text-decoration: line-through;
+  }
 }
 
 .flex {

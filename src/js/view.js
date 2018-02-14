@@ -1,9 +1,10 @@
 import { h } from 'hyperapp'
 import { ListItem } from './components.js'
+import { genId } from './utils.js'
 
 const view = (state, actions) => (
   <div>
-    <h1>HyperList</h1>
+    <h1><strong>Hyper</strong>List</h1>
     <div class='flex'>
       <input
         type="text"
@@ -17,11 +18,13 @@ const view = (state, actions) => (
       <button onclick={actions.add}>＋</button>
     </div>
       <ul>
-        {state.todos
-          .map(t => (
+        {state.items
+          .map(i => (
             <ListItem
-              id={t.id}
-              value={t.value}
+              id={i.id}
+              value={i.value}
+              completed={i.completed}
+              toggle={actions.toggle}
             />
           ))}
       </ul>
