@@ -1,6 +1,11 @@
 const actions = {
-  down: value => state => ({ count: state.count - value }),
-  up: value => state => ({ count: state.count + value })
-};
+  add: () => state => ({
+    input: '',
+    todos: state.todos.concat({
+      value: state.input,
+      id: state.todos.length + 1 })
+  }),
+  input: ({ value }) => ({ input: value })
+}
 
 export default actions;

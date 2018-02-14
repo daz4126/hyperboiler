@@ -1,5 +1,7 @@
 const state = {
-  count: 0
+  todos: [],
+  input: '',
+  placeholder: 'Make a list...'
 };
 
 export default state;
