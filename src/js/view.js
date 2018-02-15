@@ -25,9 +25,15 @@ const view = (state, actions) => (
               value={i.value}
               completed={i.completed}
               toggle={actions.toggle}
+              destroy={actions.destroy}
             />
           ))}
       </ul>
+      <a href="#" onclick={() =>
+                  actions.clearAllCompleted({
+                    items: state.items
+                  })
+                }>Clear completed items</a>
   </div>
 );
 

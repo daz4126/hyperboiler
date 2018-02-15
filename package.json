@@ -2,7 +2,7 @@
   "name": "hyperboiler",
   "homepage": "https://github.com/daz4126/hyperboiler",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.3.0",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/daz4126/hyperboiler.git"
@@ -16,7 +16,7 @@
   "scripts": {
     "start": "parcel src/index.html --out-dir docs",
     "build": "parcel build src/index.html --out-dir docs --public-url ./",
-    "deploy": "npm run build && git push origin master"
+    "deploy": "npm run build && git commit -a -m 'latest build' && git push origin master"
   },
   "devDependencies": {
     "node-sass": "^4.7.2",

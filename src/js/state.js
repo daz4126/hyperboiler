@@ -1,7 +1,8 @@
 const state = {
+  index: 0,
   items: [],
   input: '',
-  placeholder: 'Make a list...'
+  placeholder: 'Add something...'
 };
 
 export default state;

@@ -24,63 +24,75 @@ h1 {
   font-size: 4.2em;
 }
 
-input {
-  border: 1px solid $primary-color;
-  background-color: $primary-color;
-
-  font-size: 1.5em;
-  font-weight: 200;
-
-  width: 50vw;
-  height: 62px;
-
-  padding: 15px 20px;
-  margin: 0;
-  outline: 0;
-
-  &::-webkit-input-placeholder {
-    color: $bg-color;
-  }
-
-  &::-moz-placeholder {
-    color: $bg-color;
-  }
-
-  &::-ms-input-placeholder {
-    color: $bg-color;
-  }
-
-  &:hover, &:focus, &:active {
-    background: $primary-color;
-  }
+a{
+  color: $primary-color;
 }
 
-button {
-  background: $bg-color;
-  border-radius: 0px;
-  border: 1px solid $primary-color;
-  color: $primary-color;
+.flex{
 
-  height: 62px;
+  display: flex;
+  align-items: top;
+  margin: 20px 0;
 
-  font-size: 1.8em;
-  font-weight: 100;
 
-  outline: none;
-
-  padding: 5px 15px;
-
-  margin: 0 3px;
-
-  &:hover, &:disabled {
-    background: $primary-color;
-    color: #111;
-  }
-  &:active {
-    outline: 2px solid $primary-color;
-  }
-  &:focus {
+  input {
     border: 1px solid $primary-color;
+    background-color: $primary-color;
+
+    font-size: 1.5em;
+    font-weight: 200;
+
+    width: 50vw;
+    height: 62px;
+
+    padding: 15px 20px;
+    margin: 0;
+    outline: 0;
+
+    &::-webkit-input-placeholder {
+      color: $bg-color;
+    }
+
+    &::-moz-placeholder {
+      color: $bg-color;
+    }
+
+    &::-ms-input-placeholder {
+      color: $bg-color;
+    }
+
+    &:hover, &:focus, &:active {
+      background: $primary-color;
+    }
+  }
+
+  button {
+    background: $bg-color;
+    border-radius: 0px;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+
+    height: 62px;
+
+    font-size: 1.8em;
+    font-weight: 100;
+
+    outline: none;
+
+    padding: 5px 15px;
+
+    margin: 0 3px;
+
+    &:hover, &:disabled {
+      background: $primary-color;
+      color: #111;
+    }
+    &:active {
+      outline: 2px solid $primary-color;
+    }
+    &:focus {
+      border: 1px solid $primary-color;
+    }
   }
 }
 
@@ -95,14 +107,20 @@ ul {
 
 li {
   font-size: 1.8em;
+  clear: right;
+  vertical-align: bottom;
   &.completed{
     color: $secondary-color;
     text-decoration: line-through;
   }
-}
-
-.flex {
-  display: flex;
-  align-items: top;
-  margin: 20px 0;
+    button {
+      background: none;
+      border: none;
+      color: $primary-color;
+      float: right;
+      outline: none;
+      font-size: 0.8em;
+      font-weight: 50;
+      padding-top: 0.3em;
+  }
 }
