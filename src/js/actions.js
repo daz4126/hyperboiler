@@ -1,11 +1,12 @@
+import { uuid } from './utils.js'
+
 const actions = {
   add: () => state => ({
-    index: state.index + 1,
     input: '',
     items: state.items.concat({
       value: state.input,
       completed: false,
-      id: 'item-' + state.index })
+      id: uuid() })
   }),
   input: ({ value }) => ({ input: value }),
   toggle: ({ id, value }) => state => ({
