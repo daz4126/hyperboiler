@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({10:[function(require,module,exports) {
+})({12:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -100,7 +100,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],7:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":10}],3:[function(require,module,exports) {
+},{"./bundle-url":12}],3:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":7}],11:[function(require,module,exports) {
+},{"_css_loader":11}],10:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -584,7 +584,7 @@ var List = exports.List = function List(_ref3) {
     })
   );
 };
-},{"hyperapp":11}],6:[function(require,module,exports) {
+},{"hyperapp":10}],6:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -625,7 +625,7 @@ var view = function view(state, actions) {
 };
 
 exports.default = view;
-},{"hyperapp":11,"./components.js":8}],2:[function(require,module,exports) {
+},{"hyperapp":10,"./components.js":8}],2:[function(require,module,exports) {
 'use strict';
 
 require('./css/index.scss');
@@ -647,7 +647,7 @@ var _view2 = _interopRequireDefault(_view);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var main = (0, _hyperapp.app)(_state2.default, _actions2.default, _view2.default, document.body);
-},{"./css/index.scss":3,"hyperapp":11,"./js/actions.js":4,"./js/state.js":5,"./js/view.js":6}],15:[function(require,module,exports) {
+},{"./css/index.scss":3,"hyperapp":10,"./js/actions.js":4,"./js/state.js":5,"./js/view.js":6}],15:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -667,7 +667,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '53078' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '53730' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

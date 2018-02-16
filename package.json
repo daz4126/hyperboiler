@@ -16,7 +16,8 @@
   "scripts": {
     "start": "parcel src/index.html --out-dir docs",
     "build": "parcel build src/index.html --out-dir docs --public-url ./",
-    "deploy": "npm run build && git commit -a -m 'latest build' && git push origin master"
+    "deploy": "npm run build && git commit -a -m 'latest build' && git push origin master",
+    "test": "jest"
   },
   "devDependencies": {
     "node-sass": "^4.7.2",

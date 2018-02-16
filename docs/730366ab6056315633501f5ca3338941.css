@@ -66,26 +66,29 @@ a {
     .flex button:focus {
       border: 1px solid #00caff; }
 
-ul {
+ul#list {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 1.2em;
   width: 50vw; }
-
-li {
-  font-size: 1.8em;
-  clear: right;
-  vertical-align: bottom; }
-  li.completed {
-    color: hotpink;
-    text-decoration: line-through; }
-  li button {
-    background: none;
-    border: none;
-    color: #00caff;
-    float: right;
-    outline: none;
-    font-size: 0.8em;
-    font-weight: 50;
-    padding-top: 0.3em; }
+  ul#list li {
+    font-size: 1.8em;
+    vertical-align: bottom; }
+    ul#list li.completed {
+      color: hotpink;
+      text-decoration: line-through; }
+      ul#list li.completed button {
+        color: #00caff; }
+    ul#list li button {
+      visibility: hidden;
+      background: none;
+      border: none;
+      color: hotpink;
+      outline: none;
+      font-size: 0.8em;
+      font-weight: 50;
+      padding-top: 0.3em;
+      margin-left: 5px; }
+    ul#list li:hover button {
+      visibility: visible; }

@@ -97,31 +97,37 @@ a{
   }
 }
 
-ul {
+ul#list {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 1.2em;
   width: 50vw;
-}
-
-
-li {
-  font-size: 1.8em;
-  clear: right;
-  vertical-align: bottom;
-  &.completed{
-    color: $secondary-color;
-    text-decoration: line-through;
-  }
-    button {
-      background: none;
-      border: none;
-      color: $primary-color;
-      float: right;
-      outline: none;
-      font-size: 0.8em;
-      font-weight: 50;
-      padding-top: 0.3em;
+  li {
+    font-size: 1.8em;
+    vertical-align: bottom;
+    &.completed{
+      color: $secondary-color;
+      text-decoration: line-through;
+      button{
+        color: $primary-color;
+      }
+    }
+      button {
+        visibility: hidden;
+        background: none;
+        border: none;
+        color: $secondary-color;
+        outline: none;
+        font-size: 0.8em;
+        font-weight: 50;
+        padding-top: 0.3em;
+        margin-left: 5px;
+    }
+    &:hover{
+      button{
+        visibility: visible;
+      }
+    }
   }
 }
