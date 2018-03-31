@@ -1,5 +1,5 @@
 import { h } from 'hyperapp'
-import { AddItem } from './components.js'
+import { AddItem, ListItem } from './components.js'
 
 const view = (state, actions) => (
   <div>
