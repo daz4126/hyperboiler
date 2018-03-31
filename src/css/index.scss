@@ -68,32 +68,10 @@ a{
   }
 
   button {
-    background: $bg-color;
-    border-radius: 0px;
-    border: 1px solid $primary-color;
-    color: $primary-color;
-
     height: 62px;
-
     font-size: 1.8em;
-    font-weight: 100;
-
-    outline: none;
-
     padding: 5px 15px;
-
     margin: 0 3px;
-
-    &:hover, &:disabled {
-      background: $primary-color;
-      color: #111;
-    }
-    &:active {
-      outline: 2px solid $primary-color;
-    }
-    &:focus {
-      border: 1px solid $primary-color;
-    }
   }
 }
 
@@ -114,7 +92,6 @@ ul#list {
       }
     }
       button {
-        visibility: hidden;
         background: none;
         border: none;
         color: $secondary-color;
@@ -124,10 +101,31 @@ ul#list {
         padding-top: 0.3em;
         margin-left: 5px;
     }
-    &:hover{
-      button{
-        visibility: visible;
-      }
-    }
   }
 }
+
+button {
+    background: $bg-color;
+    border-radius: 0px;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+
+    font-weight: 100;
+
+    outline: none;
+
+    padding: 5px;
+
+    margin: 0;
+
+    &:hover, &:disabled {
+      background: $primary-color;
+      color: #111;
+    }
+    &:active {
+      outline: 2px solid $primary-color;
+    }
+    &:focus {
+      border: 1px solid $primary-color;
+    }
+  }

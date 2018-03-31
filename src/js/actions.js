@@ -1,17 +1,15 @@
-import { uuid } from './utils.js'
-
 const actions = {
   add: () => state => ({
     input: '',
     items: state.items.concat({
       value: state.input,
       completed: false,
-      id: uuid() })
+      id: Date.now() })
   }),
   input: ({ value }) => ({ input: value }),
-  toggle: ({ id, value }) => state => ({
+  toggle: id => state => ({
     items: state.items.map(
-      item => (id === item.id ? Object.assign({}, item, { completed: !value }) : item)
+      item => (id === item.id ? Object.assign({}, item, { completed: !item.completed }) : item)
     )
   }),
   destroy: id => state => ({items: state.items.filter(
